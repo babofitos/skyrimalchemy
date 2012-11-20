@@ -1,0 +1,91 @@
+Canis Root:Damage Stamina,Fortify Marksman,Fortify One-Handed,Paralysis 
+Luna Moth Wing:Damage Magicka,Fortify Light Armor,Regenerate Health,Invisibility 
+Large Antlers:Restore Stamina,Fortify Stamina,Slow,Damage Stamina Regen 
+Glowing Mushroom:Resist Shock,Fortify Destruction,Fortify Smithing,Fortify Health 
+Slaughterfish Scales:Resist Frost,Lingering Damage Health,Fortify Heavy Armor,Fortify Block 
+Blue Butterfly Wing:Damage Stamina,Damage Magicka Regen,Fortify Conjuration,Fortify Enchanting 
+Orange Dartwing:Restore Stamina,Ravage Magicka,Fortify Pickpocket,Lingering Damage Health 
+Histcarp:Restore Stamina,Fortify Magicka,Damage Stamina Regen,Waterbreathing 
+Human Heart:Damage Health,Damage Magicka Regen,Damage Magicka,Frenzy 
+Chaurus Eggs:Weakness to Poison,Fortify Stamina,Damage Magicka,Invisibility 
+Mudcrab Chitin:Restore Stamina,Cure Disease,Resist Poison,Resist Fire 
+Bone Meal:Damage Stamina,Fortify Conjuration,Resist Fire,Ravage Stamina 
+Deathbell:Damage Health,Ravage Stamina,Slow,Weakness to Poison 
+Ectoplasm:Restore Magicka,Fortify Destruction,Fortify Magicka,Damage Health 
+Purple Mountain Flower:Restore Stamina,Fortify Sneak,Lingering Damage Magicka,Resist Frost 
+Falmer Ear:Damage Health,Frenzy,Resist Poison,Fortify Lockpicking 
+Creep Cluster:Restore Magicka,Fortify Carry Weight,Damage Stamina Regen,Weakness to Magic  Nirnroot:Damage Health,Damage Stamina,Invisibility,Resist Magic  
+Bleeding Crown:Weakness to Fire,Fortify Block,Weakness to Poison,Resist Magic 
+Frost Salts:Weakness to Fire,Resist Frost,Restore Magicka,Fortify Conjuration 
+Butterfly Wing:Restore Health,Lingering Damage Stamina,Fortify Barter,Damage Magicka 
+Blisterwort:Damage Stamina,Restore Health,Frenzy,Fortify Smithing 
+Powdered Mammoth Tusk:Restore Stamina,Weakness to Fire,Fortify Sneak,Fear 
+Juniper Berries:Weakness to Fire,Regenerate Health,Fortify Marksman,Damage Stamina Regen 
+Honeycomb:Restore Stamina,Fortify Block,Fortify Light Armor,Ravage Stamina 
+Wheat:Restore Health,Fortify Health,Damage Stamina Regen,Lingering Damage Magicka 
+Thistle Branch:Resist Frost,Ravage Stamina,Resist Poison,Fortify Heavy Armor 
+Eye of Sabre Cat:Restore Stamina,Damage Magicka,Ravage Health,Restore Health 
+Troll Fat:Resist Poison,Fortify Two-Handed,Frenzy,Damage Health 
+Pine Thrush Egg:Restore Stamina,Fortify Lockpicking,Weakness to Poison,Resist Shock 
+White Cap:Weakness to Frost,Fortify Heavy Armor,Restore Magicka,Ravage Magicka 
+Spider Egg:Damage Stamina,Damage Magicka Regen,Fortify Lockpicking,Fortify Marksman 
+Hagraven Feathers:Damage Magicka,Frenzy,Fortify Conjuration,Weakness to Shock 
+Crimson Nirnroot:Damage Health,Invisibility,Damage Stamina,Resist Magic 
+Spriggan Sap:Damage Magicka Regen,Fortify Enchanting,Fortify Smithing,Fortify Alteration 
+Blue Dartwing:Resist Shock,Restore Health,Fortify Pickpocket,Fear 
+Lavender:Resist Magic,Fortify Stamina,Ravage Magicka,Fortify Conjuration 
+Void Salts:Weakness to Shock,Resist Magic,Damage Health,Fortify Magicka 
+Dragons Tongue:Resist Fire,Fortify Barter,Fortify Illusion,Fortify Two-Handed 
+Rock Warbler Egg:Restore Health,Fortify One-Handed,Damage Stamina,Weakness to Magic 
+Pearl:Restore Stamina,Restore Magicka,Fortify Block,Resist Shock 
+Grass Pod:Resist Poison,Ravage Magicka,Fortify Alteration,Restore Magicka 
+Torchbug Thorax:Restore Stamina,Lingering Damage Magicka,Weakness to Magic,Fortify Stamina 
+Giant Lichen:Ravage Health,Weakness to Poison,Weakness to Shock,Restore Magicka 
+River Betty:Damage Health,Fortify Alteration,Slow,Fortify Carry Weight 
+Garlic:Resist Poison,Fortify Stamina,Regenerate Magicka,Regenerate Health 
+Fly Amanita:Resist Fire,Frenzy,Fortify Two-Handed,Regenerate Stamina 
+Glow Dust:Damage Magicka,Fortify Destruction,Damage Magicka Regen,Resist Shock 
+Niamiras Rot:Damage Magicka,Fear,Fortify Lockpicking,Regenerate Health 
+Abecean Longfin:Weakness to Frost,Fortify Sneak,Weakness to Poison,Fortify Restoration 
+Elves Ear:Restore Magicka,Weakness to Frost,Fortify Marksman,Resist Fire 
+Briar Heart:Restore Magicka,Fortify Block,Paralysis,Fortify Magicka 
+Skeever Tail:Damage Stamina Regen,Ravage Health,Damage Health,Fortify Light Armor 
+Ice Wraith Teeth:Weakness to Frost,Fortify Heavy Armor,Invisibility,Weakness to Fire 
+Hanging Moss:Damage Magicka,Damage Magicka Regen,Fortify Health,Fortify One-Handed 
+Taproot:Weakness to Magic,Fortify Illusion,Regenerate Magicka,Restore Magicka 
+Salt Pile:Weakness to Magic,Fortify Restoration,Slow,Regenerate Magicka 
+Hagraven Claw:Resist Magic,Lingering Damage Magicka,Fortify Enchanting,Fortify Barter 
+Chickens Egg:Resist Magic,Waterbreathing,Damage Magicka Regen,Lingering Damage Stamina 
+Cyrodilic Spadetail:Damage Stamina,Fear,Fortify Restoration,Ravage Health 
+Scaly Pholiata:Weakness to Magic,Fortify Illusion,Regenerate Stamina,Fortify Carry Weight 
+Small Antlers:Weakness to Poison,Fortify Restoration,Lingering Damage Stamina,Damage Health 
+Tundra Cotton:Resist Magic,Fortify Magicka,Fortify Block,Fortify Barter 
+Beehive Husk:Resist Poison,Fortify Light Armor,Fortify Sneak,Fortify Destruction 
+Fire Salts:Weakness to Frost,Restore Magicka,Resist Fire,Regenerate Magicka 
+Bear Claws:Restore Stamina,Fortify Health,Fortify One-Handed,Damage Magicka Regen 
+Wisp Wrappings:Restore Stamina,Fortify Destruction,Fortify Carry Weight,Resist Magic 
+Vampire Dust:Invisibility,Regenerate Health,Restore Magicka,Cure Disease 
+Dwarven Oil:Weakness to Magic,Regenerate Magicka,Fortify Illusion,Restore Magicka 
+Nightshade:Damage Health,Damage Magicka Regen,Lingering Damage Stamina,Fortify Destruction 
+Mora Tapinella:Restore Magicka,Lingering Damage Health,Regenerate Stamina,Fortify Illusion 
+Charred Skeever Hide:Restore Stamina,Resist Poison,Cure Disease,Restore Health 
+Daedra Heart:Damage Stamina Regen,Damage Magicka,Restore Health,Fear 
+Blue Mountain Flower:Restore Health,Fortify Conjuration,Fortify Health,Damage Magicka Regen 
+Hawk Beak:Restore Stamina,Resist Frost,Fortify Carry Weight,Resist Shock 
+Jarrin Root:Damage Health,Damage Stamina,Damage Magicka,Damage Magicka Regen 
+Frost Mirriam:Resist Frost,Fortify Sneak,Ravage Magicka,Damage Stamina Regen 
+Jazbay Grapes:Weakness to Magic,Fortify Magicka,Regenerate Magicka,Ravage Health 
+Hawk Feathers:Cure Disease,Fortify Light Armor,Fortify One-Handed,Fortify Sneak 
+Bee:Restore Stamina,Ravage Stamina,Regenerate Stamina,Weakness to Shock 
+Giant's Toe:Damage Stamina,Fortify Carry Weight,Fortify Health,Damage Stamina Regen 
+Imp Stool:Damage Health,Paralysis,Lingering Damage Health,Restore Health 
+Snowberries:Resist Fire,Fortify Enchanting,Resist Frost,Resist Shock 
+Sabre Cat Tooth:Restore Stamina,Fortify Heavy Armor,Fortify Smithing,Weakness to Poison 
+Swamp Fungal Pod:Resist Shock,Lingering Damage Magicka,Paralysis,Restore Health 
+Silverside Perch:Restore Stamina,Damage Stamina Regen,Ravage Health,Resist Frost 
+Moon Sugar:Weakness to Fire,Resist Frost,Restore Magicka,Regenerate Magicka 
+Red Mountain Flower:Restore Magicka,Ravage Magicka,Fortify Magicka,Damage Health 
+Nordic Barnacle:Damage Magicka,Waterbreathing,Regenerate Health,Fortify Pickpocket 
+Small Pearl:Restore Stamina,Fortify One-Handed,Fortify Restoration,Resist Frost 
+Human Flesh:Damage Health,Paralysis,Restore Magicka,Fortify Sneak 
+Slaughterfish Egg:Resist Poison,Fortify Pickpocket,Lingering Damage Health,Fortify Stamina
