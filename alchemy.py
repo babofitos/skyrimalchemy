@@ -74,8 +74,8 @@ def similar_ingredients(i):
                 break
     return "\nEND OF SIMILAR INGREDIENTS"
 
-def ingredients_with_effects(e):
-    """prints all ingredients that have the same effects as e"""
+def recipe(e):
+    """prints ingredients needed for effect e"""
     #e = list, effects
     d = READ_METHOD
     print "ALL INGREDIENTS WITH " + str(e) + " EFFECT(S):\n"
@@ -86,6 +86,7 @@ def ingredients_with_effects(e):
         else:
             print ingredient
     return "\nEND OF INGREDIENTS WITH " + str(e) + " EFFECT(S)"
+
 def run_program():
     print "type help for a list of commands\n"
     while True:
@@ -94,7 +95,7 @@ def run_program():
             print "list (lists all ingredients)\
             \neffect (effect for <ingredient>)\
             \nsimilar (ingredients with same effect as <ingredient>)\
-            \ningredients (ingredients with <effect(s)>)\
+            \nrecipe (ingredients for <effect(s)>)\
             \nexit (exit program)"
         elif cmd == "list":
             print list_ingredients()
@@ -104,13 +105,15 @@ def run_program():
         elif cmd == "similar":
             i = raw_input("Enter an ingredient: \n")
             print similar_ingredients(i)
-        elif cmd == "ingredients":
+        elif cmd == "recipe":
             e = raw_input("Enter one or more effects separated by commas: \n")
             remove_space = e.replace(', ', ',')
             split_e = remove_space.split(',')
-            print ingredients_with_effects(split_e)
+            print recipe(split_e)
         elif cmd == "exit":
             break
+        else:
+            print "Not a valid command"
         print "==============================================================="
         
 run_program()
