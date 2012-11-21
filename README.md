@@ -1,1 +1,2 @@
-A list of all Skyrim alchemy ingredients, its effects, and ways to search for them.
+A list of all Skyrim alchemy ingredients, its effects, and ways to search for them.  
+There are two ways of getting ingredients & effects. First is through ingredients.txt. The other way is through the internet. The internet way scrapes [Skyrim ingredients and its effects](http://www.ign.com/wikis/the-elder-scrolls-5-skyrim/List_of_Ingredients_with_Effects) into a dictionary. Change the read method through config.txt.
