@@ -1,119 +1,111 @@
-import alchemyscrape
+from bs4 import BeautifulSoup
+import urllib2
 
-def load_ingredients_file():
-    f = open('ingredients.txt', 'r')
-    return f
-
-def read_ingredients_file():
-    """read ingredients file and store in dict"""
-    d = {}
-    f = load_ingredients_file()
-    key=True
-    current=f.readline()
-    for i,line in enumerate(f):
-        strip_newline = line.rstrip()
-        if strip_newline == '':
-            key = False
-        elif key:
-            try:
-                d[current].append(strip_newline)
-            except:
-                d[current] = [strip_newline]
-        else:
-            current=strip_newline
-            key = True
-    return d
-
-def read_ingredients_web():
-    return alchemyscrape.scrape()
-
-def is_local():
-    f = open('config.txt', 'r')
-    for line in f:
-        if line[0] == '#':
-            pass
-        else:
-            if line[-1] == '0':
-                return False
-            return True
+class Scraper:
+    def __init__(self):
+        self.url = urllib2.urlopen \
+            ("http://www.uesp.net/wiki/Skyrim:Ingredients")
+        soup = BeautifulSoup(self.url)
+        self.soup_td = soup.find("table", class_="wikitable").find_all("td")
         
-if is_local():
-    print "LOADING INGREDIENTS FROM INGREDIENTS.TXT"
-    READ_METHOD = read_ingredients_file()
-else:
-    print "LOADING INGREDIENTS FROM THE WEB"
-    READ_METHOD = read_ingredients_web()
+    def print_ingredients(self):
+        for i in range(1, len(self.soup_td)):
+            if i % 10 == 1:
+                print self.soup_td[i].a.text
 
-def list_ingredients():
-    if is_local():
-        f = load_ingredients_file()
-        print f.read()
-        return "\nDone"
-    else:
-        return alchemyscrape.list_ingredients()
+    def print_effects(self):
+        for i in range(2, len(self.soup_td)):
+            if i % 10 == 3 or i % 10 == 4 or i % 10 == 5 or i % 10 == 6:
+                print self.soup_td[i].a['title']
 
-def effect(i):
-    """gives all effects for ingredient i"""
-    #i = string, ingredient
-    d = READ_METHOD
-    try:
-        return d[i]
-    except:
-        return "No such ingredient"
+    def create_list(self):
+        output={}
+        current=''
+        for i in range(1, len(self.soup_td)):
+            if i % 10 == 1:
+                current=self.soup_td[i].a.text.__str__()
+            elif i % 10 == 3 or i % 10 == 4 or i % 10 == 5 or i % 10 == 6:
+                try:
+                    output[current].append(self.soup_td[i].a['title'].__str__())
+                except:
+                    output[current] = [self.soup_td[i].a['title'].__str__()]
+        return output
 
-def similar_ingredients(i):
-    """prints other ingredients that have the same effects
-    as the ones in i."""
-    #i = string, ingredient
-    d = READ_METHOD
-    print "SIMILAR INGREDIENTS:\n"
-    for ingredient, effect in d.iteritems():
-        for e in d[i]:
-            if e in effect:
+class Commands:
+    def __init__(self):
+        self.data = Scraper()
+        
+    def list_ingredients(self):
+        return self.data.print_ingredients()
+
+    def list_effects(self):
+        return self.data.print_effects()
+
+    def effect(self,i):
+        """gives all effects for ingredient i"""
+        #i = string, ingredient
+        d = self.data.create_list()
+        try:
+            return d[i]
+        except:
+            return "No such ingredient"
+
+    def similar_ingredients(self,i):
+        """prints other ingredients that have the same effects
+        as the ones in i."""
+        #i = string, ingredient
+        d = self.data.create_list()
+        print "SIMILAR INGREDIENTS:\n"
+        for ingredient, effect in d.iteritems():
+            for e in d[i]:
+                if e in effect:
+                    print ingredient
+                    break
+        return "\nEND OF SIMILAR INGREDIENTS"
+
+    def recipe(self,e):
+        """prints ingredients needed for effect e"""
+        #e = list, effects
+        d = self.data.create_list()
+        print "ALL INGREDIENTS WITH " + str(e) + " EFFECT(S):\n"
+        for ingredient, effect in d.iteritems():
+            for effects in e:
+                if effects not in effect:
+                    break
+            else:
                 print ingredient
-                break
-    return "\nEND OF SIMILAR INGREDIENTS"
+        return "\nEND OF INGREDIENTS WITH " + str(e) + " EFFECT(S)"
 
-def recipe(e):
-    """prints ingredients needed for effect e"""
-    #e = list, effects
-    d = READ_METHOD
-    print "ALL INGREDIENTS WITH " + str(e) + " EFFECT(S):\n"
-    for ingredient, effect in d.iteritems():
-        for effects in e:
-            if effects not in effect:
-                break
-        else:
-            print ingredient
-    return "\nEND OF INGREDIENTS WITH " + str(e) + " EFFECT(S)"
-
-def run_program():
+def run_program(cmd):
     print "type help for a list of commands\n"
     while True:
-        cmd = raw_input("Enter a command: ")
-        if cmd == "help":
-            print "list (lists all ingredients)\
+        q = raw_input("Enter a command: ")
+        if q == "help":
+            print "list ingredients (lists all ingredients)\
+            \nlist effects (lists all effects)\
             \neffect (effect for <ingredient>)\
             \nsimilar (ingredients with same effect as <ingredient>)\
             \nrecipe (ingredients for <effect(s)>)\
             \nexit (exit program)"
-        elif cmd == "list":
-            print list_ingredients()
-        elif cmd == "effect":
+        elif q == "list ingredients":
+            print cmd.list_ingredients()
+        elif q == "list effects":
+            print cmd.list_effects()
+        elif q == "effect":
             i = raw_input("Enter an ingredient: \n")
-            print effect(i)
-        elif cmd == "similar":
+            print cmd.effect(i)
+        elif q == "similar":
             i = raw_input("Enter an ingredient: \n")
-            print similar_ingredients(i)
-        elif cmd == "recipe":
+            print cmd.similar_ingredients(i)
+        elif q == "recipe":
             e = raw_input("Enter one or more effects separated by commas: \n")
             remove_space = e.replace(', ', ',')
             split_e = remove_space.split(',')
-            print recipe(split_e)
-        elif cmd == "exit":
+            print cmd.recipe(split_e)
+        elif q == "exit":
             break
         else:
             print "Not a valid command"
         print "==============================================================="
         
-run_program()
+run_program(Commands())

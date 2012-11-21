@@ -1,3 +1,0 @@
-#if file = 0, ingredients scraped from web. 
-#if file = 1, ingredients load from ingredients.txt
-file=1
