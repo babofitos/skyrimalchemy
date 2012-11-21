@@ -9,26 +9,22 @@ def scrape():
     """ls lists ingredients and effects if set to True"""
     output={}
     current=''
-    count=0
     for i in range(460):
         stripped = soup_tds[i].text.lstrip().rstrip().__str__()
-        if count % 5 == 0:   
+        if i % 5 == 0:   
             current=stripped
         else:
             try:
                 output[current].append(stripped)
             except:
                 output[current] = [stripped]
-        count+=1
     return output
 
 def list_ingredients():
-    count=0
     for i in range(460):
         stripped = soup_tds[i].text.lstrip().rstrip().__str__()
-        if count % 5 == 4:
+        if i % 5 == 4:
             print stripped+"\n"
         else:
             print stripped
-        count+=1
     return "Done"
